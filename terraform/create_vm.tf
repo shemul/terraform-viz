@@ -3,7 +3,7 @@
  * @email theshemul@gmail.com
  * @create date 2020-06-03 22:22:28
  * @modify date 2020-06-03 22:22:28
- * @desc Install Terraform from Installation Binaries.
+ * @desc create a vm using tf.
  */
 
 resource "google_compute_instance" "default" {
