@@ -23,8 +23,21 @@ resource "google_compute_instance" "myvm" {
       size  = 10
     }
   }
+  tags = ["tf-app-1"]
   network_interface {
-    network = "default"
-    access_config {}
+    network = google_compute_network.vpc_network.name
   }
+}
+
+resource "google_compute_network" "vpc_network" {
+  name = "vpc-network"
+}
+resource "google_compute_firewall" "tf-myapp-fr" {
+  name    = "tf-my-fr"
+  network = google_compute_network.vpc_network.name
+  allow {
+    protocol = "tcp"
+    ports    = [9090]
+  }
+
 }

@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="" rel="noopener">
- <img width=400px height=200px src="https://www.terraform.io/assets/images/og-image-large-e60c82fe.png" alt="Project logo"></a>
+  
+![enter image description here](./assets/terraform.png)
 </p>
 
 <h3 align="center">Terraform Practice</h3>
@@ -30,3 +30,6 @@ What things you need to install the software and how to install them.
 ```
 $ brew install terraform
 ```
+
+
+![enter image description here](./assets/viz.jpg)
